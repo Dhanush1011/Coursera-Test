@@ -1,0 +1,78 @@
+body{
+	text-align: center;
+	font-family: 'magic_school_oneregular';
+	color: white;
+	background-color: #0a0808;
+}
+
+#header-nav {
+	background-color: #ded2bd;
+	border: 0;
+}
+
+#hog-logo{
+	width: 50px;
+	height: 50px;
+	margin: 10px 15px 10px 0;
+}
+
+#brand-edits {
+	font-size: 1.75em;
+	color: #0a0808;
+	font-weight: bold;
+	margin-top: 7px;
+	margin-left: 15px;
+	margin-bottom: 0;
+}
+
+#tagline {
+	font-size: 1em;
+	margin-left: 15px;
+
+}
+
+.navbar-brand {
+	margin: 0px;
+	padding: 0;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background-color: white;
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		padding-top: 10px;
+	}
+
+	#brand-edits {
+		padding-top: 0;	
+		margin-top: 0;	
+	}
+
+	#ddbutton {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 15px;
+	}
+
+	li>a>span {
+		margin-left: 10px;
+		font-size: 1.2em;
+	}
+}
+
+#wel {
+	font-size: 70px;
+	text-align: center;
+}

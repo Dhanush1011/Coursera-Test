@@ -2,55 +2,90 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Hogwarts</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<style>
 		@font-face {
-		    font-family: 'magic_school_oneregular';
-		    src: url('magicschoolone-webfont.woff2') format('woff2'),
-		         url('magicschoolone-webfont.woff') format('woff');
-		    font-weight: normal;
-		    font-style: normal;
-
-		}	
-		h1 {
-			font-size: 70px;
-			text-align: center;
-		}
-		span {
-			font-size: 50px;
-		}
-		li {
-			font-size: 30px;
-			list-style-type: none;
-		}
-		body{
-			text-align: center;
-			font-family: 'magic_school_oneregular';
-		}
-		.g {
-			color: maroon;
-		}
-		.s {
-			color: green;
-		}
-		.h {
-			color: yellow;
-		}
-		.r {
-			color: blue;
-		}
-
+		font-family: 'magic_school_oneregular';
+	    src: url('magicschoolone-webfont.woff2') format('woff2'),
+	         url('magicschoolone-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}	
 	</style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 
 <body>
-	<h1> Welcome to Hogwarts !!!! </h1>
-	<ul> <span>Here is the List of Houses</span>
-		<li class="g">Gryffindor</li>
-		<li class="s">Slytherine</li>
-		<li class="h">Hufflepuff</li>
-		<li class="r">Ravenclaw</li>
-	</ul>
+
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg">
+				      <img alt="Brand" src="Hogwarts_logo.png" id="hog-logo">
+				    </a>
+
+				    <div class="navbar-brand">
+				    	<a href="index.html"><h1 id="brand-edits">Hogwarts School</h1></a>
+				    	<p>
+				    		<span id="tagline">of Witchcraft & Wizadry</span>
+				    	</p>
+				    </div>
+
+				    <button id="ddbutton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>									
+				</div>		
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="sorting.html">
+								<img src="hat.png"><br class="hidden-xs"><span>Sorting</span>
+							</a>
+						</li>
+						<li>
+							<a href="spells.html">
+								<img src="wand.png"><br class="hidden-xs"><span>Spells</span>
+							</a>
+						</li>
+						<li>
+							<a href="Professors.html">
+								<img src="professor.png"><br class="hidden-xs"><span>Professor</span>
+							</a>
+						</li>
+						<li>
+							<a href="Daily-prohet.html">
+								<img src="news.png"><br class="hidden-xs"><span>Daily Prophet</span>
+							</a>
+						</li>
+						<li>
+							<a href="hog_history.html">
+								<img src="history.png"><br class="hidden-xs"><span>History</span>
+							</a>
+						</li>												
+					</ul>					
+				</div>
+
+			</div>
+		</nav>	
+	</header>
+
+	<h1 id="wel"> Welcome to Hogwarts !!!!! </h1>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 <footer>
 	Head Master Albus Dumbledore, &copy; Copyright
