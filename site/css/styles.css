@@ -28,7 +28,6 @@ body{
 #tagline {
 	font-size: 1em;
 	margin-left: 15px;
-
 }
 
 .navbar-brand {
@@ -50,6 +49,49 @@ body{
 	background-color: white;
 }
 
+#wel {
+	font-size: 70px;
+	text-align: center;
+}
+
+.container .jumbotron {
+	margin-top: 15px;
+	padding: 0;
+	border: 1px solid black;
+	box-shadow: 0 0 30px #ded2bd;
+}
+
+#letterbox {
+	background: url('../paper.jpg');
+	border-radius: 5px;
+	height: 150px;
+	border: 1px solid #ded2bd;
+	margin: 25px auto 25px auto;
+	position: relative;
+}
+
+#letterbox img {
+	position: absolute;
+	top: 25%;
+	left: 47%;
+
+}
+
+#letterbox span {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 2em;
+	color: #ded2bd;
+	text-decoration: none;
+	background-color: black;
+	opacity: 0.8;
+}
+
+#letterbox:hover {
+	box-shadow: 0 0 30px #ded2bd; 
+}
 @media (max-width: 767px) {
 	.navbar-brand {
 		padding-top: 10px;
@@ -70,9 +112,8 @@ body{
 		margin-left: 10px;
 		font-size: 1.2em;
 	}
-}
 
-#wel {
-	font-size: 70px;
-	text-align: center;
+	#wel {
+		font-size: 300%;
+	}
 }
