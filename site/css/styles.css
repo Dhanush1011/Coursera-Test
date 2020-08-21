@@ -5,6 +5,7 @@ body{
 	background-color: #0a0808;
 }
 
+/* Header */
 #header-nav {
 	background-color: #ded2bd;
 	border: 0;
@@ -48,7 +49,9 @@ body{
 #nav-list a:hover {
 	background-color: white;
 }
+/* Header */
 
+/* Homepage Content */
 #wel {
 	font-size: 70px;
 	text-align: center;
@@ -58,7 +61,7 @@ body{
 	margin-top: 15px;
 	padding: 0;
 	border: 1px solid black;
-	box-shadow: 0 0 30px #ded2bd;
+	box-shadow: 0 0 15px #ded2bd;
 }
 
 #letterbox {
@@ -71,9 +74,7 @@ body{
 }
 
 #letterbox img {
-	position: absolute;
-	top: 25%;
-	left: 47%;
+	margin: 35px auto 0 auto;
 
 }
 
@@ -90,8 +91,88 @@ body{
 }
 
 #letterbox:hover {
-	box-shadow: 0 0 30px #ded2bd; 
+	box-shadow: 0 0 10px #ded2bd; 
 }
+/* Homepage Content */
+
+/* Letter */
+
+#letter {
+	border: 2px solid black;
+	box-shadow: 0 0 10px #ded2bd; 
+	margin-left: 100px;
+	margin-right: 100px;
+	height: 800px;
+	background: url('../papbg.jpg');
+}
+
+#letter img {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+#letter p:nth-child(2) {
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+}
+
+#letter p:nth-child(3), #letter p:nth-child(4), #letter p:nth-child(5),#letter p:nth-child(6), #letter p:nth-child(7) {
+	font-family: 'Caveat', cursive;
+	font-size: 2em;
+	margin-top: 30px;
+	margin-right: 50px;
+	margin-left: 50px;
+	text-align: left;
+	color: black;
+}
+
+#letter p:nth-child(7) {
+	font-weight: bold;
+}
+
+
+/* Lettrt */
+
+/* Footer */
+.panel-footer {
+	margin-top: 15px;
+	background-color: #ded2bd;
+	border: 0;
+}
+
+.panel-footer div.row {
+	margin-bottom: 5px;
+}
+
+#houses, #location, #affiliation {
+	line-height: 1.5;
+	font-size: 1.3em;
+	color: #0a0808; 
+}
+
+#houses span, #location span, #affiliation span {
+	font-size: 1.3em;
+	font-weight: 700;
+	text-align: left;
+}
+
+#location p {
+	line-height: 1.5;
+}
+
+#albus {
+	color: green;
+}
+
+.text-center {
+	font-size: 1.2em;
+	color: #0a0808;
+}
+/* Footer */
+
 @media (max-width: 767px) {
 	.navbar-brand {
 		padding-top: 10px;
