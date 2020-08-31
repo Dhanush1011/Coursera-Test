@@ -2,13 +2,13 @@ body{
 	text-align: center;
 	font-family: 'magic_school_oneregular';
 	color: white;
-	background-color: #0a0808;
+	background-image: linear-gradient(black,#0a0808,#0a2142,#1c3963,#177b82,#b4c2d6);
 }
 
 /* Header */
 #header-nav {
-	background-color: #ded2bd;
-	border: 0;
+	background-color: black;
+	border: none;
 }
 
 #hog-logo{
@@ -19,8 +19,8 @@ body{
 
 #brand-edits {
 	font-size: 1.75em;
-	color: #0a0808;
-	font-weight: bold;
+	color: #ded2bd;
+	font-weight: 500;
 	margin-top: 7px;
 	margin-left: 15px;
 	margin-bottom: 0;
@@ -47,14 +47,16 @@ body{
 }
 
 #nav-list a:hover {
-	background-color: white;
+	background-color: #ded2bd;
 }
+
 /* Header */
 
 /* Homepage Content */
 #wel {
 	font-size: 70px;
 	text-align: center;
+	color: #ded2bd;
 }
 
 .container .jumbotron {
@@ -65,7 +67,7 @@ body{
 }
 
 #letterbox {
-	background: url('../paper.jpg');
+	background: url('../images/paper.jpg');
 	border-radius: 5px;
 	height: 150px;
 	border: 1px solid #ded2bd;
@@ -103,7 +105,7 @@ body{
 	margin-left: 100px;
 	margin-right: 100px;
 	height: 800px;
-	background: url('../papbg.jpg');
+	background: url('../images/papbg.jpg');
 }
 
 #letter img {
@@ -119,9 +121,9 @@ body{
 }
 
 #letter p:nth-child(2) {
-	font-weight: bold;
+	font-weight: 500;
 	color: #002000;
-	text-shadow: 0 0 5px #012101;
+	text-shadow: 0 0 3px #012101;
 
 }
 
@@ -140,10 +142,62 @@ body{
 
 /* Letter */
 
+/* Spells */
+
+#spell-title {
+	color: #ded2bd;
+	font-size: 70px;
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+#spell-content > div {
+	color: #ded2bd;
+	font-size: 1.5em;
+	margin-bottom: 35px;
+}
+
+.spell-item-tile {
+	font-family: 'Caveat', cursive;
+	text-align: left;
+	margin-bottom: 30px;
+
+}
+
+.spell-item-tile hr {
+	width: 75%;
+}
+
+.spell-item-photo {
+	position: relative;
+	border: 2px solid white;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	max-width: 250px;
+}
+
+.spell-item-description {
+	margin: 30px 0 auto 0;
+}
+
+h3.spell-item-title {
+	font-weight: 575;
+	font-size: 2.25em;
+	margin-top: 0;
+	color: #FF8C00;
+}
+
+.spell-item-details {
+	font-size: 1.3em;
+}
+/* Spells */
+
 /* Footer */
 .panel-footer {
 	margin-top: 15px;
-	background-color: #ded2bd;
+	background-image: linear-gradient(#177b80,#b4c2d6,white);
 	border: 0;
 }
 
@@ -182,6 +236,10 @@ body{
 	#letter p {
 		font-size: 1.5em;
 	}
+
+	.spell-item-description {
+		margin: 43px 0 auto 0;
+	}
 }
 
 @media (max-width: 767px) {
@@ -216,5 +274,26 @@ body{
 
 	#letter p {
 		font-size: 1.3em;
+	}
+
+	.spell-item-photo {
+		position: relative;
+		border: 2px solid white;
+		overflow: hidden;
+		padding: 0;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 250px;
+	}
+
+	h3.spell-item-title {
+		font-weight: 575;
+		font-size: 2.25em;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.spell-item-details {
+		text-align: center;
 	}
 }
