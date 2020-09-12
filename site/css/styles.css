@@ -54,6 +54,35 @@ body{
 
 /* Homepage Content */
 #wel {
+
+	color: black;
+	text-shadow: 0 0 3px #fcf8f7;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: .005em; /* Adjust as needed */
+  animation: 
+    typing 7s steps(100, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+
+#wel {
 	font-size: 70px;
 	text-align: center;
 	color: #ded2bd;
@@ -142,9 +171,62 @@ body{
 
 /* Letter */
 
+
+/* Sortng */
+	
+#sorting-title{
+	color: #ded2bd;
+	font-size: 70px;
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+#sorting-content > div {
+	color: #ded2bd;
+	font-size: 1.5em;
+	margin-bottom: 35px;
+}
+
+.sorting-item-tile {
+	font-family:'magic_school_oneregular',cursive;
+	text-align: left;
+	margin-bottom: 30px;
+
+}
+
+.sorting-item-tile hr {
+	width: 75%;
+}
+
+.sorting-item-photo {
+	position: relative;
+	border-collapse: 100;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	max-width: 250px;
+}
+
+.sorting-item-description {
+	margin: 30px 0 auto 0;
+}
+
+h3.sorting-item-title {
+	font-weight: 575;
+	font-size: 2.25em;
+	margin-top: 0;
+	color: #FF8C00;
+}
+
+.sorting-item-details {
+	font-size: 1.3em;
+}
+/* Sortng */
+
 /* Spells */
 
-#spell-title {
+#spell-title, #profile-title{
 	color: #ded2bd;
 	font-size: 70px;
 	margin-top: 0;
@@ -192,7 +274,199 @@ h3.spell-item-title {
 .spell-item-details {
 	font-size: 1.3em;
 }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.tile {
+	margin-bottom: 45px;
+}
+
+.flip-card {
+	margin: 0 auto 0 auto;
+  	background-color: transparent;
+  	width: 250px;
+  	height: 200px;  
+  	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  font-family: 'Caveat', cursive;
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	border: 2px solid black;
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back > h1 {
+	font-weight: 600;
+	font-size: 2.25em;
+	margin-top: 15px;
+	color: black;
+}
+
+.flip-card-back > p {
+
+	font-size: 1.35em;
+}
+
 /* Spells */
+
+/* Profile*/
+#profile-title, #profile-title{
+	color: #ded2bd;
+	font-size: 70px;
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+#profile-content > div {
+	color: #ded2bd;
+	font-size: 1.5em;
+	margin-bottom: 35px;
+}
+
+.profile-item-tile {
+	
+	text-align: left;
+	margin-bottom: 30px;
+
+}
+
+.profile-item-tile hr {
+	width: 75%;
+}
+
+.profile-item-photo {
+	position: relative;
+	border: 2px solid white;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	max-width: 250px;
+}
+
+.profile-item-description {
+	margin: 30px 0 auto 0;
+}
+
+h3.profile-item-title {
+	font-weight: 575;
+	font-size: 2.25em;
+	margin-top: 0;
+	color: black;
+}
+
+.profile-item-details {
+	font-size: 1.3em;
+}
+
+#profile-title {
+
+	color: black;
+	text-shadow: 0 0 3px #fcf8f7;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-top: 50px;
+  letter-spacing: .005em; /* Adjust as needed */
+  animation: 
+    typing 15s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#lback {
+	border: 2px solid black;
+	box-shadow: 0 0 10px #ded2bd; 
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 1500px;
+	background: url('../images/backimag2.png');
+}
+
+#lback img {
+	float: left;
+	margin-left: 100px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	width: 250px;
+	height: 350px;
+	border: 2px solid black;
+	box-shadow: 0 0 10px maroon;
+}
+
+#lback h3{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 2em;
+	color: #012101;
+}
+
+#lback p{
+	margin: auto;
+	font-size: 2.2em; 
+	text-align: ; 
+	color: #002000;
+	text-shadow: 0 0 3px #ff0814; 
+}
+
+#lback > div > ul > li{
+	margin: auto;
+	font-size: 2.2em; 
+	text-align: ; 
+	color: #002000;
+	text-shadow: 0 0 3px #ff0814; 
+}
+
+#lback p span, #lback > div > ul > li{
+	list-style-type:none; 
+	
+	color: #002000;
+	text-shadow: 0 0 3px #012101;
+}
+
+
+/* Profile*/
 
 /* Footer */
 .panel-footer {
@@ -276,24 +550,7 @@ h3.spell-item-title {
 		font-size: 1.3em;
 	}
 
-	.spell-item-photo {
-		position: relative;
-		border: 2px solid white;
-		overflow: hidden;
-		padding: 0;
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 250px;
-	}
-
-	h3.spell-item-title {
-		font-weight: 575;
-		font-size: 2.25em;
-		margin-top: 0;
-		text-align: center;
-	}
-
-	.spell-item-details {
-		text-align: center;
+	.tile{
+		margin-bottom: 0;
 	}
 }
